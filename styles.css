@@ -17,6 +17,9 @@ body {
 .header {
     background-color: aquamarine;
     color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-container {
@@ -42,3 +45,58 @@ body {
     justify-content: space-evenly;
 }
 
+.form-opener {
+    position: absolute;
+    background-color: rgb(157, 246, 142);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.modal-form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    margin-top: 50%;
+    background: white;
+    border: 1px solid lightgrey;
+    display: none;
+    z-index: 1;
+}
+
+.book-form {
+    margin: 10px;
+    display: grid;
+    grid-template: auto auto / auto auto;
+    align-items: center;
+    gap: 40px;
+}
+
+label {
+    color: black;
+}
+
+input {
+    padding: 5px;
+    width: 300px;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.modal-form button {
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    flex: 0;
+}
+
+.hidden {
+    position: hidden;
+}
+
+.shown {
+    position: fixed;
+}

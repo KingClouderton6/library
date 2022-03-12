@@ -23,6 +23,8 @@ function addBookToLibraryTest(){
         const bookCard = document.createElement('div');
         bookCard.classList.add('card');
         cardContainer.appendChild(bookCard);
+
+        bookCard.dataset.id = [i];
         
         const bookTitle = document.createElement('h2');
         bookTitle.textContent = myLibrary[i].title
@@ -49,3 +51,16 @@ function addBookToLibrary(){
 
     }
 }
+
+const modalForm = document.querySelector('.modal-form');
+const modalOpenBtn = document.querySelector('.form-opener');
+const modalCloseBtn = document.querySelector(".close-form");
+
+modalCloseBtn.onclick = function(){
+    modalForm.style.display = "none";
+}
+
+modalOpenBtn.onclick = function(){
+    modalForm.style.display = "block";
+}
+
